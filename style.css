@@ -1,31 +1,41 @@
 
+*{
+    margin: 0;
+    background-color: #e9e4bb;
+    font-size: 1rem;
+}
+
 img {
-    filter: sepia(80%);
+    filter: sepia(30%);
+    width: 350px;
+    height: 350px;
+    border-radius: 50px;
     /* filter: blur(0.5px); */
 
   }
 
 .name{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: rgb(167, 39, 156);
 }
 
 .desig{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: black;
 }
 
 .desig span{
-    font-size: 2rem;
-    color: rgba(129, 218, 29, 0.897);
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
 }
 
-#sec1{
-    background-color: blueviolet;
+#c2,#c3,#c4,#c5,#c6,#c7,#c8{
+    display: none !important;
 }
 
 #content1 h1, #content2 h1, #content3 h1, #content4 h1, #content5 h1, #content6 h1, #content7 h1, #content8 h1{
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #007ABB;
 }
 #content2 p, #content1 p, #content3 p, #content p, #content5 p,  #content6 p{
@@ -41,15 +51,53 @@ img {
 #content1 h1:hover, #content2 h1:hover, #content3 h1:hover, #content4 h1:hover{
     font-size: 24px;
     cursor: pointer;
-    color: rgb(13, 199, 128);
+    color: black;
 }
 
 #content8 table th{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
-    color: rgba(224, 105, 8, 0.918);
+    color: black;
 }
 
 #content8 table tr{
-    font-size: 12px;
+    font-size: 0.8rem;
 }
+
+#foot span{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#foot span:hover{
+    font-size: 16px;
+    font-weight: bold;
+    color: #41ceaa;
+}
+
+#content6 li{
+    font-size: 18px;
+}
+
+#insta i{
+    color: #D63086;
+}
+
+#email i{
+    color: rgb(209, 74, 74);
+}
+
+#phone i{
+    color: rgb(101, 20, 155);
+}
+
+#prev i, #next i{
+    color: saddlebrown;
+}
+
+
+#prev i:hover, #next i:hover{
+    cursor: pointer;
+    color: black;
+}
+
