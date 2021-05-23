@@ -1,8 +1,10 @@
 
 *{
-    margin: 0;
-    background-color: #e9e4bb;
-    font-size: 1rem;
+    margin: 0px;
+}
+
+body{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.342), rgb(148, 236, 175));
 }
 
 img {
@@ -10,34 +12,80 @@ img {
     width: 350px;
     height: 350px;
     border-radius: 50px;
-    /* filter: blur(0.5px); */
-
+    background-color: none;
   }
 
+
+
 .name{
-    font-size: 1.5rem;
-    color: rgb(167, 39, 156);
+    font-size: 2rem;
+    font-weight: bold;
+    background: -webkit-linear-gradient(rgb(190, 77, 190), rgb(134, 113, 194));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .desig{
     font-size: 1.2rem;
-    color: black;
+    color: rgb(44, 42, 44);
+    animation:desig;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: 5;
 }
+
+@keyframes desig {
+
+    from{
+        color: rgb(145, 134, 134);
+    }
+
+    to{
+        color: rgb(12, 47, 99);
+    }
+    
+}
+
+
+
 
 .desig span{
     font-size: 1.2em;
     font-weight: bold;
     color: black;
+    background: -webkit-linear-gradient(rgb(190, 77, 190), rgb(134, 113, 194));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+.desig span:hover{
+    
+    background: -webkit-linear-gradient(rgb(73, 68, 73), rgb(134, 113, 194));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
 }
 
 #c2,#c3,#c4,#c5,#c6,#c7,#c8{
     display: none !important;
 }
 
-#content1 h1, #content2 h1, #content3 h1, #content4 h1, #content5 h1, #content6 h1, #content7 h1, #content8 h1{
+#content1 h1, #content2 h1, #content3 h1, #content4 h1, #content5 h1, #content6 h1, #content8 h1, #content7 h1{
     font-size: 1.5rem;
-    color: #007ABB;
+    color: rgb(190, 77, 190);
+    animation: heading;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-iteration-count: 5;
+    
 }
+
+@keyframes heading {
+
+    from {color: rgb(212, 207, 207);}
+    to{color:rgb(190, 77, 190);}
+
+}
+
 #content2 p, #content1 p, #content3 p, #content p, #content5 p,  #content6 p{
     font-size: 18px;
 }
@@ -48,7 +96,7 @@ img {
     font-size: 20px;
 }
 
-#content1 h1:hover, #content2 h1:hover, #content3 h1:hover, #content4 h1:hover{
+#content1 h1:hover, #content2 h1:hover, #content3 h1:hover, #content4 h1:hover, #content5 h1:hover{
     font-size: 24px;
     cursor: pointer;
     color: black;
@@ -72,7 +120,7 @@ img {
 #foot span:hover{
     font-size: 16px;
     font-weight: bold;
-    color: #41ceaa;
+    color: #A061C1;
 }
 
 #content6 li{
@@ -92,12 +140,16 @@ img {
 }
 
 #prev i, #next i{
-    color: saddlebrown;
+    background-image: linear-gradient(to top, rgba(161, 21, 173, 0.671), black);
+    -webkit-background-clip:text ;
+    -webkit-text-fill-color:transparent;
 }
 
 
 #prev i:hover, #next i:hover{
     cursor: pointer;
-    color: black;
+    background-image: linear-gradient(to right, rgba(226, 46, 14, 0.671), rgb(13, 54, 102));
+    -webkit-background-clip:text ;
+    -webkit-text-fill-color:transparent;
 }
 

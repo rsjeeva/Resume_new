@@ -84,17 +84,6 @@ function display(x){
 }
 
 
-// var na = document.getElementById('name');
-// var design = document.getElementById('design');
-
-// na.innerHTML='';
-
-// for(i=0;i<5;i++)
-// {
-// setTimeout(()=>{
-//     na1.innerHTML='Jeevanantham R';
-//         setTimeout(() => {
-//             na.innerHTML='e';
-//         }, 500);
-// }),500;
-// }
+// var a1 = document.getElementById('A');
+// var a2 = document.getElementById('S');
+// var a3 = document.getElementById('E');
