@@ -13,6 +13,17 @@ img {
     height: 350px;
     border-radius: 50px;
     background-color: none;
+    transition-property: width;
+    transition-timing-function: ease;
+    transition-duration: 2s;
+    /* transition-delay: 0.5s; */
+
+    /* transition-delay:5s; */
+  }
+
+  img:hover{
+      width: 250px;
+
   }
 
 
@@ -25,19 +36,23 @@ img {
     -webkit-text-fill-color: transparent;
 }
 
-.desig{
+#design2{
+    display: none;
+}
+
+#design1, #d2{
     font-size: 1.2rem;
     color: rgb(44, 42, 44);
     animation:desig;
     animation-duration: 6s;
     animation-delay: 1s;
-    animation-iteration-count: 5;
+    animation-iteration-count: infinite;
 }
 
 @keyframes desig {
 
     from{
-        color: rgb(212, 207, 207);
+        color: rgb(145, 134, 134);
     }
 
     to{
@@ -49,7 +64,7 @@ img {
 
 
 
-.desig span{
+#design1 span, #d2 span{
     font-size: 1.2em;
     font-weight: bold;
     color: black;
@@ -58,7 +73,7 @@ img {
     -webkit-text-fill-color:transparent;
 }
 
-.desig span:hover{
+#design1 span:hover, #d2 span:hover{
     
     background: -webkit-linear-gradient(rgb(73, 68, 73), rgb(134, 113, 194));
     -webkit-background-clip: text;
