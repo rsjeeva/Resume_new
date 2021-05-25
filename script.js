@@ -84,6 +84,10 @@ function display(x){
 }
 
 
-// var a1 = document.getElementById('A');
-// var a2 = document.getElementById('S');
-// var a3 = document.getElementById('E');
+var t_name = document.getElementById('name');
+var arr=['J','e','e','v','a','n','a','n','t','h','a','m',' ','R'];
+console.log(arr);
+var str='';
+// str+=arr[0];
+disp_name(str);
+

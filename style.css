@@ -4,28 +4,28 @@
 }
 
 body{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.342), rgb(148, 236, 175));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.342), rgb(154, 221, 171) );
+
 }
 
 img {
     filter: sepia(30%);
     width: 350px;
-    height: 350px;
-    border-radius: 50px;
+    height: 3   50px;
+    border-radius: 20px;
     background-color: none;
     transition-property: width;
-    transition-timing-function: ease;
+    transition-timing-function: ease-in-out;
     transition-duration: 2s;
-    /* transition-delay: 0.5s; */
-
-    /* transition-delay:5s; */
   }
 
   img:hover{
-      width: 250px;
-
+      width: 150px;
   }
 
+  #name_desig{
+    font-family: 'Poppins', sans-serif;
+  }
 
 
 .name{
@@ -34,7 +34,27 @@ img {
     background: -webkit-linear-gradient(rgb(190, 77, 190), rgb(134, 113, 194));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: proname;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    animation-timing-function: ease-in-out;
+
 }
+
+@keyframes proname {
+
+    from{
+        font-size: 2rem;
+    }
+
+    to{
+        font-size: 1.8rem;
+    }
+    
+}
+
+
 
 #design2{
     display: none;
@@ -44,25 +64,26 @@ img {
     font-size: 1.2rem;
     color: rgb(44, 42, 44);
     animation:desig;
-    animation-duration: 6s;
-    animation-delay: 1s;
+    animation-duration: 2s;
+    /* animation-delay: 1s; */
     animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes desig {
 
     from{
         color: rgb(145, 134, 134);
+        font-size: 1.2rem;
     }
 
     to{
         color: rgb(12, 47, 99);
+        font-size: 1rem;
     }
     
 }
-
-
-
 
 #design1 span, #d2 span{
     font-size: 1.2em;
@@ -88,21 +109,25 @@ img {
     font-size: 1.5rem;
     color: rgb(190, 77, 190);
     animation: heading;
-    animation-duration: 6s;
+    animation-duration: 3s;
     animation-delay: 1s;
-    animation-iteration-count: 5;
+    animation-iteration-count: infinite;
     
 }
 
 @keyframes heading {
 
-    from {color: rgb(212, 207, 207);}
-    to{color:rgb(190, 77, 190);}
+    from {color: rgb(141, 124, 124);
+    font-style: normal;
+    }
+    to{color:rgb(190, 77, 190);
+    font-style: italic;}
 
 }
 
 #content2 p, #content1 p, #content3 p, #content p, #content5 p,  #content6 p{
     font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #content2 span, #content5 span{
@@ -128,12 +153,14 @@ img {
 }
 
 #foot span{
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: none;
+    margin-top: 5px;
+    /* margin-top: 2px; */
 }
 
 #foot span:hover{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     color: #A061C1;
 }
@@ -143,15 +170,20 @@ img {
 }
 
 #insta i{
-    color: #D63086;
+    color: #cc3d44;
 }
 
 #email i{
-    color: rgb(209, 74, 74);
+    color: #cc3d44;
 }
 
 #phone i{
-    color: rgb(101, 20, 155);
+    color: #cc3d44;
+}
+
+#linkedin i {
+    /* margin-top: -2px; */
+    color: #cc3d44;
 }
 
 #prev i, #next i{
@@ -168,3 +200,32 @@ img {
     -webkit-text-fill-color:transparent;
 }
 
+/* .l_icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 0;
+    background-color: linear-gradient(to right, rgba(0, 0, 0, 0.342), rgb(148, 236, 175)); ;
+} */
+
+/* Media query */
+
+@media only screen and (max-width:576px) and (min-width:396px)
+{
+
+    img {
+        filter: sepia(30%);
+        width: 80%;
+        height: 450px;
+        border-radius: 20px;
+        margin-left: 10%;
+        background-color: none;
+        transition-property: width;
+        transition-timing-function: ease-in-out;
+        transition-duration: 2s;
+      }
+
+      img:hover{
+        width: 60%;
+    }
+  
+}
